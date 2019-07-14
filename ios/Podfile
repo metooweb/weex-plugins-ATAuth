@@ -1,0 +1,19 @@
+source 'https://github.com/aliyun/aliyun-specs.git'
+source 'https://github.com/metooweb/common-specs.git'
+source 'https://github.com/CocoaPods/Specs.git'
+
+platform :ios, '9.0'
+#inhibit_all_warnings!
+
+def common
+	pod 'WeexSDK'
+	pod 'WeexPluginLoader'
+  pod 'ATAuthSDK'
+
+end
+
+target 'ATAuth' do
+    common
+end
+
+
